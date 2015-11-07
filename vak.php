@@ -6,9 +6,10 @@
 <?php
 require('backend/connect.php');
 
-if($_GET['id']){
-  $sql = "SELECT id, titel, auteur FROM samenvattingen WHERE id=$_GET[id]";
+if($_GET['vak']){
+  $sql = "SELECT id, titel, auteur FROM samenvattingen WHERE vak='$_GET[vak]'";
   $result = $conn->query($sql);
+  echo "<h2>Samenvattingen voor het vak ". $_GET['vak'] .":</h2>";
 
   if ($result->num_rows > 0) {
      // output data of each row
@@ -20,7 +21,7 @@ if($_GET['id']){
   }
   $conn->close();
 } else {
-  echo "Please submit an ID";
+  echo "Voer een vak in";
   $conn->close();
 }
 ?>

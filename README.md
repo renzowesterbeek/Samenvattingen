@@ -9,5 +9,5 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 - [ ] Commentaar
 
 ## Database structure
-| id | Auteur | Titel | Vak | Leerjaar |
-|----|--------|-------|-----|----------|
+| id | Datum | Auteur | Titel | Vak | Leerjaar | Bestandsnaam |
+|----|-------|--------|-------|-----|----------|--------------|
