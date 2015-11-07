@@ -10,6 +10,8 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 - [ ] Favorieten
 - [ ] Custom error pagina's
 - [ ] Template/tutorial maken overzichtelijke mooie samenvatting + tips & tricks / hulp hoe een te maken
+- [ ] identieke bestanden check
+- [ ] revisies
 
 ## Prioriteiten
 - 1 Authenticatie
