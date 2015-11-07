@@ -30,7 +30,7 @@ Download: VakTitelAuteur.docx
 
 - Originele bestandsnaam
 - Unieke id
-- Titel
+- Titel*
 - Auteur
 - Uploader
 - Of iemand anoniem wil zijn
