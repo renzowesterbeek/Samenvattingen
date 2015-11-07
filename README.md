@@ -24,7 +24,7 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 |----|-------|--------|-------|-----|----------|--------------|
 
 ## Naamgeving
-Server: ID.docx
+Server: ID-revisie.docx
 
 Download: VakTitelAuteur.docx
 
