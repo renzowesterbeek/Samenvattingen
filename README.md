@@ -38,6 +38,7 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 - Grootte (MB)
 - Extensie (docx etc)
 - #e revisie
+- type samenvatting
 
 ## Databases
 
