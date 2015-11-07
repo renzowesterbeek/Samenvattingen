@@ -1,29 +1,28 @@
 <html>
 <head>
-  <title>Samenvatting</title>
+  <title>Samenvattingen</title>
 </head>
 <body>
 <?php
 require('backend/connect.php');
 
 if($_GET['vak']){
-  $sql = "SELECT id, titel, auteur FROM samenvattingen WHERE vak='$_GET[vak]'";
-  $result = $conn->query($sql);
-  echo "<h2>Samenvattingen voor het vak ". $_GET['vak'] .":</h2>";
-
-  if ($result->num_rows > 0) {
-     // output data of each row
-     while($row = $result->fetch_assoc()) {
-         echo $row["titel"]. " van ". $row["auteur"];
-     }
-  } else {
-     echo "0 results";
-  }
-  $conn->close();
+  $sql = "SELECT titel, auteur FROM samenvattingen WHERE vak='$_GET[vak]'";
 } else {
-  echo "Voer een vak in";
-  $conn->close();
+  $sql = "SELECT titel, auteur FROM samenvattingen";
 }
+$result = $conn->query($sql);
+echo "<h2>Samenvattingen ". $_GET['vak'] .":</h2>";
+
+if ($result->num_rows > 0) {
+   // output data of each row
+   while($row = $result->fetch_assoc()) {
+       echo $row["titel"]. " van ". $row["auteur"] . "<br>";
+   }
+} else {
+   echo "0 resultaten";
+}
+$conn->close();
 ?>
 </body>
 </html>
