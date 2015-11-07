@@ -31,8 +31,8 @@ Download: VakTitelAuteur.docx
 - Originele bestandsnaam
 - Unieke id
 - Titel
-- Auteur - leeglaten als anoniem
-- (of de auteur anoniem wil zijn)
+- Auteur
+- Uploader
 - Timestamp upload
 - Datum bestand gemodificeerd
 - Vak*
