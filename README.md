@@ -8,6 +8,7 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 - [ ] Beoordelingen
 - [ ] Commentaar
 - [ ] Favorieten
+- [ ] Custom error pagina's
 - [ ] Template/tutorial maken overzichtelijke mooie samenvatting + tips & tricks / hulp hoe een te maken
 
 ## Prioriteiten
@@ -19,6 +20,10 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 ## Database structure
 | id | Datum | Auteur | Titel | Vak | Leerjaar | Bestandsnaam |
 |----|-------|--------|-------|-----|----------|--------------|
+
+## Naamgeving
+Server: ID.docx
+Download: VakTitelAuteur.docx
 
 ## Wat er allemaal moet worden opgeslagen over een bestand:
 
