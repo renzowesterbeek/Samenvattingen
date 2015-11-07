@@ -37,6 +37,7 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 - Tags (optioneel)
 - Grootte (MB)
 - Extensie (docx etc)
+- #e revisie
 
 ## Databases
 
