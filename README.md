@@ -25,18 +25,17 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 Server: ID.docx
 Download: VakTitelAuteur.docx
 
-## Wat er allemaal moet worden opgeslagen over een bestand:
+## Wat er allemaal kan worden opgeslagen over een bestand:
 
-- Bestandsnaam
+- Originele bestandsnaam*wordt sowieso verkregen
 - Unieke id
 - Titel
-- Auteur
+- Auteur*standaard de gebruiker, maar je kan ook iemand anders z'n samenvatting uploaden
 - of de auteur anoniem wil zijn
-- Beoordeling of wellicht aparte database voor alle beoordelingen
 - Timestamp upload
 - Datum bestand gemodificeerd
-- Vak
-- Leerjaar
+- Vak*
+- Leerjaar*
 - niveau
 - Methode > hoofstuk(ken) > paragraaf/paragrafen
 - Tags (optioneel)
