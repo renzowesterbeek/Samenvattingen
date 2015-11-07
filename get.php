@@ -6,13 +6,18 @@
 <?php
 require('backend/connect.php');
 
-if($_GET['vak']){
-  $sql = "SELECT titel, auteur FROM samenvattingen WHERE vak='$_GET[vak]'";
-} else {
-  $sql = "SELECT titel, auteur FROM samenvattingen";
+$sqlstring = "";
+foreach($_GET as $key => $value){
+  if(strlen($sqlstring) == 0){
+    $sqlstring .= $key ."='". $value ."'";
+  } else {
+    $sqlstring .= " AND ". $key ."='". $value ."'";
+  }
 }
+
+$sql = "SELECT titel, auteur FROM samenvattingen WHERE " . $sqlstring;
 $result = $conn->query($sql);
-echo "<h2>Samenvattingen ". $_GET['vak'] .":</h2>";
+echo "<h2>Samenvattingen</h2>";
 
 if ($result->num_rows > 0) {
    // output data of each row
@@ -20,7 +25,7 @@ if ($result->num_rows > 0) {
        echo $row["titel"]. " van ". $row["auteur"] . "<br>";
    }
 } else {
-   echo "0 resultaten";
+   echo "Geen resultaten";
 }
 $conn->close();
 ?>
