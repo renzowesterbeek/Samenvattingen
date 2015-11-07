@@ -17,7 +17,13 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 - 1 Authenticatie
 - 2 Upload functie
 - 3 Databases
+- 4 Favorieten
+- 5 zoekfunctie
+- 6 Identieke
+- 7 Revisies
 - 4 vormgeving
+- 8 beoordeling
+- 9 Commentaar
 
 ## Database structure
 | id | Datum | Auteur | Titel | Vak | Leerjaar | Bestandsnaam |
