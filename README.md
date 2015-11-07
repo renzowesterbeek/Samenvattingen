@@ -33,6 +33,7 @@ Download: VakTitelAuteur.docx
 - Titel
 - Auteur
 - Uploader
+- Of iemand anoniem wil zijn
 - Timestamp upload
 - Datum bestand gemodificeerd
 - Vak*
