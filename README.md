@@ -27,11 +27,11 @@ Download: VakTitelAuteur.docx
 
 ## Wat er allemaal kan worden opgeslagen over een bestand:
 
-- Originele bestandsnaam*wordt sowieso verkregen
+- Originele bestandsnaam
 - Unieke id
 - Titel
-- Auteur*standaard de gebruiker, maar je kan ook iemand anders z'n samenvatting uploaden
-- of de auteur anoniem wil zijn
+- Auteur - leeglaten als anoniem
+- (of de auteur anoniem wil zijn)
 - Timestamp upload
 - Datum bestand gemodificeerd
 - Vak*
