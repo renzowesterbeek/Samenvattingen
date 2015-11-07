@@ -11,10 +11,10 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 - [ ] Template/tutorial maken overzichtelijke mooie samenvatting + tips & tricks / hulp hoe een te maken
 
 ## Prioriteiten
-1 Authenticatie
-2 Upload functie
-3 Databases
-4 vormgeving
+- 1 Authenticatie
+- 2 Upload functie
+- 3 Databases
+- 4 vormgeving
 
 ## Database structure
 | id | Datum | Auteur | Titel | Vak | Leerjaar | Bestandsnaam |
