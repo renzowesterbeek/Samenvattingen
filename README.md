@@ -23,6 +23,7 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 
 ## Naamgeving
 Server: ID.docx
+
 Download: VakTitelAuteur.docx
 
 ## Wat er allemaal kan worden opgeslagen over een bestand:
@@ -48,6 +49,5 @@ Download: VakTitelAuteur.docx
 
 - Bestanden + info
 - Beoordelingen
-- commentaar?
-- users + info
-- user voorkeuren
+- Commentaar
+- Users (incl voorkeuren)
