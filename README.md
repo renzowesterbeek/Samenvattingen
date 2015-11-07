@@ -32,8 +32,11 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 - Datum bestand gemodificeerd
 - Vak
 - Leerjaar
+- niveau
 - Methode > hoofstuk(ken) > paragraaf/paragrafen
 - Tags (optioneel)
+- Grootte (MB)
+- Extensie (docx etc)
 
 ## Databases
 
