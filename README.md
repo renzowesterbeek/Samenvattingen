@@ -25,34 +25,32 @@ Samenvattingen gemaakt door leerlingen, allemaal overzichtelijk op één website
 - 8 beoordeling
 - 9 Commentaar
 
-## Database structure
-| id | Datum | Auteur | Titel | Vak | Leerjaar | Bestandsnaam |
-|----|-------|--------|-------|-----|----------|--------------|
-
-## Naamgeving
+## Bestandsnaamgeving
 Server: ID-revisie.docx
 
 Download: VakTitelAuteur.docx
 
-## Wat er allemaal kan worden opgeslagen over een bestand:
+## Gegevens over samenvattingen:
 
-- Originele bestandsnaam
-- Unieke id
-- Titel*
-- Auteur
-- Uploader
-- Of iemand anoniem wil zijn
-- Timestamp upload
-- Datum bestand gemodificeerd
-- Vak*
-- Leerjaar*
-- niveau
-- Methode > hoofstuk(ken) > paragraaf/paragrafen
-- Tags (optioneel)
-- Grootte (MB)
-- Extensie (docx etc)
-- #e revisie
-- type samenvatting
+| Wat | Voorbeeld |
+|-----|-----------|
+| Originele bestandsnaam | Mijn samenvatting.docx |
+| Unieke id |
+| Titel* | 
+| Auteur |
+| Uploader |
+| Of iemand anoniem wil zijn |
+| Timestamp upload |
+| Datum bestand gemodificeerd |
+| Vak* |
+| Leerjaar* |
+| Niveau |
+| Methode > hoofstuk(ken) > paragraaf/paragrafen |
+| Tags |
+| Grootte (MB) |
+| Extensie (docx etc) |
+| Revisie nr |
+| Type |
 
 ## Databases
 
