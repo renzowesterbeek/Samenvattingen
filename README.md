@@ -59,7 +59,7 @@ Download: VakTitelAuteur.docx
 - list.php (lists alle samenvattingen gevonden met keywords (auteur, vak, jaarlaag, etc))
 - 📁 css/
 - 📁 js/
-- 📁 data/ (geuploade samenvattingen)
+- 📁 files/ (geuploade samenvattingen)
 
 ## Databases
 
