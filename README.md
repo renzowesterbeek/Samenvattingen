@@ -35,22 +35,22 @@ Download: VakTitelAuteur.docx
 | Wat | Voorbeeld |
 |-----|-----------|
 | Originele bestandsnaam | Mijn samenvatting.docx |
-| Unieke id |
-| Titel* | 
-| Auteur |
-| Uploader |
-| Of iemand anoniem wil zijn |
-| Timestamp upload |
-| Datum bestand gemodificeerd |
-| Vak* |
-| Leerjaar* |
-| Niveau |
-| Methode > hoofstuk(ken) > paragraaf/paragrafen |
+| Unieke id | 4628 |
+| Titel* | Samenvatting |
+| Auteur | Renzo Westerbeek |
+| Uploader | Laszlo Schoonheid |
+| Anoniem | false |
+| Timestamp upload | 7-11-2015 |
+| Datum bestand gemodificeerd | 8-11-2015 |
+| Vak* | Aardrijkskunde |
+| Leerjaar* | 5 |
+| Niveau | VWO |
+| Methode > hoofstuk(ken) > paragraaf/paragrafen | De Geo, H5.3 |
 | Tags |
-| Grootte (MB) |
+| Grootte | 12.582.912 bytes |
 | Extensie (docx etc) |
-| Revisie nr |
-| Type |
+| Revisie nr | 2 |
+| Type | Samenvatting |
 
 ## Databases
 
