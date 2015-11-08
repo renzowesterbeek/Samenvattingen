@@ -2,15 +2,15 @@
 
 <?php
 	$id = $_GET['id'];
-	
+
 	if (!$_GET['revision']) {
 		$revision = '0'; //retrieve from database, default 0;
 	} else {
 		$revision = $_GET['revision'];
 	};
-	
+
 	$extension = '.' . 'docx'; //retrieve from database
-	
+
 	$base = 'http://lschoonheid.leerik.nl/summary/';
 	$url = $base.'files/'.$id.'-'.$revision.$extension;
 ?>
@@ -19,19 +19,19 @@
 	<title><?php echo $DocumentTitle ?></title>
 	<head>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		
+
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">-->
-		
+
 		<!--<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta property="og:locale" content="nl_NL">
 		<meta property="og:title" content="<?php echo $DocumentTitle ?>">
 		<meta property="og:description" content="">-->
-		
+
 		<!--<link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />-->
 		<!--<link href="images/favicon.png" rel="icon" type="image/png" />-->
-		
+
 		<?php
 			if ( !$ScriptPass ) {
 				echo "
@@ -49,19 +49,19 @@
 				echo '<script>$.getScript( "scripts/ScriptPasser.php?sp=' . $ScriptPass . '");console.log("[DevMode] Currently preventing Google Analytics logging as you appear to be in Developer Mode.")</script>';
 			};
 		?>
-		
+
 		<style>
 			html, body{
 			  height:100%;
 			}
-			
+
 			body {
 				padding: 0px;
 				margin: 0px;
 			}
 		</style>
 	</head>
-	
+
 	<body>
 		<noscript>
 			<center>
@@ -70,9 +70,9 @@
 				</div>
 			</center>
 		</noscript>
-		
+
 		<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=<?php echo $url ?>' width='100%' height='100%' frameborder='0'>
 		</iframe>
-	
+
 	</body>
 </html>
