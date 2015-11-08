@@ -52,6 +52,15 @@ Download: VakTitelAuteur.docx
 | Revisie nr | 2 |
 | Type | Samenvatting |
 
+## Bestandsstructuur
+- index.php (homepage)
+- upload.php (uploadplek)
+- view.php (viewer voor 1 bestand)
+- list.php (lists alle samenvattingen gevonden met keywords (auteur, vak, jaarlaag, etc))
+- 📁 css/
+- 📁 js/
+- 📁 data/ (geuploade samenvattingen)
+
 ## Databases
 
 - Bestanden + info
