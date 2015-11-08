@@ -28,9 +28,11 @@ Header set Cache-Control "public"
 </FilesMatch>
 
 RewriteEngine on
-RewriteRule ^summary/([0-9]+)/view/?$ summary/view.php?id=$1
-RewriteRule ^summary/([0-9]+)/revision/([0-9]+)/view/?$ summary/view.php?id=$1&revision=$2
+RewriteRule ^summary/([0-9]+)/view/?$ view.php?id=$1
+RewriteRule ^summary/([0-9]+)/revision/([0-9]+)/view/?$ view.php?id=$1&revision=$2
 
-RewriteRule ^summary/([0-9]+)/download/?$ summarydownload.php?id=$1
-RewriteRule ^summary/([0-9]+)/revision/([0-9]+)/download/?$ summary/download.php?id=$1&revision=$2
-RewriteRule ^summary/f/(.*)/n/(.*)/?$ summary/files/$1
+RewriteRule ^summary/([0-9]+)/download/?$ download.php?id=$1
+RewriteRule ^summary/([0-9]+)/revision/([0-9]+)/download/?$ download.php?id=$1&revision=$2
+RewriteRule ^summary/f/(.*)/n/(.*)/?$ files/$1
+
+RewriteRule ^leerjaar/(.*)/([A-Za-z]+)$ /list.php?leerjaar=$1&vak=$2
