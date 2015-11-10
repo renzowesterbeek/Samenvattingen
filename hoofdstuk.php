@@ -10,7 +10,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../css/base.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,37 +24,22 @@
     <ol class="breadcrumb">
       <li><a href="../index.php">Home</a></li>
       <li><a href="../<?php echo $_GET['leerjaar'] ?>">Leerjaar <?php echo $_GET['leerjaar'] ?></a></li>
-      <li><a href="../<?php echo $_GET['vak'] ?>"><?php echo $_GET['vak'] ?></a></li>
-      <li class="active">H<?php echo $_GET['hoofdstuk'] ?></li>
+      <li class="active"><?php echo $_GET['vak'] ?></li>
     </ol>
-
     <main class="container-fluid">
       <section class="col-md-8 col-md-offset-2">
-        <h1>Kies een samenvatting</h1>
+        <h1>Kies een hoofdstuk</h1>
         <?php
         require('backend/connect.php');
 
-        if(count($_GET) == 0){
-          // No keywords supplied, showing everything
-          $sql = "SELECT titel, auteur FROM samenvattingen";
-        } else {
-          // Keywords supplied, building query
-          $sqlstring = "";
-          foreach($_GET as $key => $value){
-            if(strlen($sqlstring) == 0){
-              $sqlstring .= $key ."='". $value ."'";
-            } else {
-              $sqlstring .= " AND ". $key ."='". $value ."'";
-            }
-          }
-          $sql = "SELECT titel, auteur FROM samenvattingen WHERE " . $sqlstring;
-        }
+        $sql = "SELECT * FROM samenvattingen WHERE leerjaar='$_GET[leerjaar]' AND vak='$_GET[vak]' GROUP BY hoofdstuk";
 
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
            // output data of each row
            while($row = $result->fetch_assoc()) {
-               echo $row["titel"]. " van ". $row["auteur"] . "<br>";
+             $hrefurl = $row[vak] . "/H" . $row[hoofdstuk];
+             echo "<a href='$hrefurl'>H" . $row["hoofdstuk"] . "</a><br>";
            }
         } else {
            echo "Geen resultaten";
