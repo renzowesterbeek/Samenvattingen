@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta http-equiv="refresh" content="0; url=https://github.com/renzowesterbeek/Samenvattingen" />
+    <!--<meta http-equiv="refresh" content="0; url=https://github.com/renzowesterbeek/Samenvattingen" />-->
     <title>Samenvattingen</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -19,6 +19,7 @@
     <![endif]-->
   </head>
   <body>
+    <?php include('includes/header.php') ?>
     <div class="container">
       <!-- Content here -->
     </div>
