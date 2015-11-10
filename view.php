@@ -11,7 +11,7 @@
 
 	$extension = '.' . 'docx'; //retrieve from database
 
-	$base = 'http://lschoonheid.leerik.nl/summary/';
+	$base = 'http://samenvattingen.westerbeek.us/';
 	$url = $base.'files/'.$id.'-'.$revision.$extension;
 ?>
 

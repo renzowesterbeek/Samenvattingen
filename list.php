@@ -47,14 +47,15 @@
               $sqlstring .= " AND ". $key ."='". $value ."'";
             }
           }
-          $sql = "SELECT titel, auteur FROM samenvattingen WHERE " . $sqlstring;
+          $sql = "SELECT id, titel, auteur FROM samenvattingen WHERE " . $sqlstring;
         }
 
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
            // output data of each row
            while($row = $result->fetch_assoc()) {
-               echo $row["titel"]. " van ". $row["auteur"] . "<br>";
+             $hrefurl = "http://samenvattingen.westerbeek.us/summary/".$row['id']."/view";
+             echo "<a href='$hrefurl'>". $row["titel"]. "</a> van ". $row["auteur"] . "<br>";
            }
         } else {
            echo "Geen resultaten";
