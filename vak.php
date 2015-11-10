@@ -21,18 +21,24 @@
   </head>
   <body>
     <?php include('includes/header.php') ?>
+    <ol class="breadcrumb">
+      <li><a href="index.php">Home</a></li>
+      <li class="active">Leerjaar <?php echo $_GET['leerjaar'] ?></li>
+    </ol>
     <main class="container-fluid">
       <section class="col-md-8 col-md-offset-2">
-        <h1>Kies een leerjaar</h1>
+        <h1>Kies een vak</h1>
         <?php
         require('backend/connect.php');
 
-        $sql = "SELECT leerjaar FROM samenvattingen GROUP BY leerjaar;";
+        $sql = "SELECT vak FROM samenvattingen WHERE leerjaar='$_GET[leerjaar]' GROUP BY vak";
+
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
            // output data of each row
            while($row = $result->fetch_assoc()) {
-             echo "<a href='$row[leerjaar]'> Leerjaar " . $row["leerjaar"] . "</a><br>";
+             $hrefurl = $_GET[leerjaar] . "/" . $row[vak];
+             echo "<a href='$hrefurl'>" . $row["vak"] . "</a><br>";
            }
         } else {
            echo "Geen resultaten";

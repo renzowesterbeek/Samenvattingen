@@ -36,6 +36,6 @@ RewriteRule ^summary/([0-9]+)/revision/([0-9]+)/download/?$ download.php?id=$1&r
 RewriteRule ^summary/f/(.*)/n/(.*)/?$ files/$1
 
 # /leerjaar/vak/hoofdstuk
-RewriteRule ^([0-9]+)$ list.php?leerjaar=$1
+RewriteRule ^([0-9]+)$ vak.php?leerjaar=$1
 RewriteRule ^([0-9]+)/([A-Za-z]+)$ list.php?leerjaar=$1&vak=$2
 RewriteRule ^([0-9]+)/([A-Za-z]+)/H([0-9]+)$ list.php?leerjaar=$1&vak=$2&hoofdstuk=$3

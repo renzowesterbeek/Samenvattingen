@@ -15,7 +15,6 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        <!-- Links -->
       <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
       </ul>
 
       <!-- Search -->
