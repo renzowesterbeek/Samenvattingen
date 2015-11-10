@@ -32,13 +32,13 @@
         <?php
         require('backend/connect.php');
 
-        $sql = "SELECT * FROM samenvattingen WHERE leerjaar='$_GET[leerjaar]' AND vak='$_GET[vak]' GROUP BY hoofdstuk";
+        $sql = "SELECT hoofdstuk FROM samenvattingen WHERE leerjaar='$_GET[leerjaar]' AND vak='$_GET[vak]' GROUP BY hoofdstuk";
 
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
            // output data of each row
            while($row = $result->fetch_assoc()) {
-             $hrefurl = $row[vak] . "/H" . $row[hoofdstuk];
+             $hrefurl = $_GET[vak] . "/H" . $row[hoofdstuk];
              echo "<a href='$hrefurl'>H" . $row["hoofdstuk"] . "</a><br>";
            }
         } else {
