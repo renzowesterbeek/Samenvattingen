@@ -22,8 +22,8 @@
   <body>
     <?php include('includes/header.php') ?>
     <ol class="breadcrumb">
-      <li><a href="../index.php">Home</a></li>
-      <li><a href="../<?php echo $_GET['leerjaar'] ?>">Leerjaar <?php echo $_GET['leerjaar'] ?></a></li>
+      <li><a href="../../index.php">Home</a></li>
+      <li><a href="../../<?php echo $_GET['leerjaar'] ?>">Leerjaar <?php echo $_GET['leerjaar'] ?></a></li>
       <li><a href="../<?php echo $_GET['vak'] ?>"><?php echo $_GET['vak'] ?></a></li>
       <li class="active">H<?php echo $_GET['hoofdstuk'] ?></li>
     </ol>
