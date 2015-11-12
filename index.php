@@ -10,7 +10,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="http://localhost/samenvattingen/css/base.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,28 +23,23 @@
     <?php include('includes/header.php') ?>
     <main class="container-fluid">
       <section class="col-md-8 col-md-offset-2">
-        <h1>Kies een leerjaar</h1>
-        <?php
-        require('backend/connect.php');
-
-        $sql = "SELECT leerjaar FROM samenvattingen GROUP BY leerjaar;";
-        $result = $conn->query($sql);
-        if ($result->num_rows > 0) {
-           // output data of each row
-           while($row = $result->fetch_assoc()) {
-             echo "<a href='$row[leerjaar]'> Leerjaar " . $row["leerjaar"] . "</a><br>";
-           }
-        } else {
-           echo "Geen resultaten";
-        }
-        $conn->close();
-        ?>
+        <h1 id="title"><!-- Title is loaded here by script.js --></h1>
+        <ul id="result">
+          <!-- Results will be generated here by script.js -->
+        </ul>
       </section>
     </main>
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script>
+    // Loading $_GET vars
+    var leerjaar = '<?php echo $_GET["leerjaar"]; ?>';
+    var vak = '<?php echo $_GET["vak"]; ?>';
+    var hoofdstuk = '<?php echo $_GET["hoofdstuk"]; ?>';
+    // todo: add more;
+    </script>
+    <script src="http://localhost/samenvattingen/js/script.js" type="text/javascript"></script>
   </body>
 </html>
