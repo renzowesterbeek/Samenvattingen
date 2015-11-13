@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 
 <?php
+	require('backend/connect.php');
+
 	$id = $_GET['id'];
+	$sql = "SELECT * FROM samenvattingen WHERE id='$id'";
+	$result = $conn->query($sql);
+	$row = $result->fetch_assoc();
 
 	if (!$_GET['revision']) {
 		$revision = '0'; //retrieve from database, default 0;
@@ -9,7 +14,7 @@
 		$revision = $_GET['revision'];
 	};
 
-	$extension = '.' . 'docx'; //retrieve from database
+	$extension = "." . $row['extensie'];
 
 	$base = 'http://samenvattingen.westerbeek.us/';
 	$url = $base.'files/'.$id.'-'.$revision.$extension;
