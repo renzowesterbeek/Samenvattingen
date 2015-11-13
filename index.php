@@ -9,6 +9,8 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- MATERIAL BOOTSTRAP? <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css"> -->
+
     <link rel="stylesheet" href="http://localhost/samenvattingen/css/base.css"> <!-- CHANGE TO NON-LOCAL URL -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

@@ -9,6 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a class="navbar-brand" href="index.php">Samenvattingen</a>
     </div>
 
     <!-- Collection of all navbar elements to collapse on mobile -->
@@ -28,7 +29,7 @@
        <!-- User panel -->
       <ul class="nav navbar-nav navbar-right">
         <li><p class="navbar-text">Je bent niet ingelogd</p></li>
-        <li><button type="button" class="btn btn-default navbar-btn">Log uit</button></li>
+        <li><button type="button" class="btn btn-default navbar-btn">Log in</button></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div> <!-- /.container-fluid -->
