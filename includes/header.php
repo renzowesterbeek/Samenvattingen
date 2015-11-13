@@ -1,3 +1,11 @@
+<?php
+require_once('init.php');
+
+$db = new DB;
+$googleClient = new Google_Client;
+$auth = new GoogleAuth($db, $googleClient);
+
+?>
 <!-- HEADER TO INCLUDE IN ALL PAGES -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -28,8 +36,12 @@
 
        <!-- User panel -->
       <ul class="nav navbar-nav navbar-right">
-        <li><p class="navbar-text">Je bent niet ingelogd</p></li>
+        <?php if($auth->isLoggedIn()){ ?>
+        <li><p class="navbar-text">Je bent ingelogd als <?php echo "naam" . $auth->getName(); ?></p></li>
+        <li><button type="button" class="btn btn-default navbar-btn">Log uit</button></li>
+        <?php } else {?>
         <li><button type="button" class="btn btn-default navbar-btn">Log in</button></li>
+        <?php } ?>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div> <!-- /.container-fluid -->
