@@ -21,16 +21,8 @@ if(count($_GET) == 0){
 
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
-  //$encoded = json_encode($result);
   $encoded = json_encode($result->fetch_all(MYSQLI_ASSOC));
-  //$encoded = $result->json_encode();
   echo $encoded;
-  //echo $result;
-  // output data of each row
-  //  while($row = $result->fetch_assoc()) {
-  //    $hrefurl = "http://samenvattingen.westerbeek.us/summary/".$row['id']."/view";
-  //    echo "<a href='$hrefurl'>". $row["titel"]. "</a> van ". $row["auteur"] . "<br>";
-  //  }
 } else {
    // No results
 }

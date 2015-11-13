@@ -27,7 +27,7 @@
 
        <!-- User panel -->
       <ul class="nav navbar-nav navbar-right">
-        <li><p class="navbar-text">Ingelogd als Admin</p></li>
+        <li><p class="navbar-text">Je bent niet ingelogd</p></li>
         <li><button type="button" class="btn btn-default navbar-btn">Log uit</button></li>
       </ul>
     </div><!-- /.navbar-collapse -->
