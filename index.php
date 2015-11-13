@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!--<meta http-equiv="refresh" content="0; url=https://github.com/renzowesterbeek/Samenvattingen" />-->
     <title>Samenvattingen</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/samenvattingen/css/base.css">
+    <link rel="stylesheet" href="http://localhost/samenvattingen/css/base.css"> <!-- CHANGE TO NON-LOCAL URL -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,6 +20,9 @@
   </head>
   <body>
     <?php include('includes/header.php') ?>
+    <ol class="breadcrumb">
+      <!-- breadcrumbs are generated here -->
+    </ol>
     <main class="container-fluid">
       <section class="col-md-8 col-md-offset-2">
         <h1 id="title"><!-- Title is loaded here by script.js --></h1>
@@ -40,6 +42,6 @@
     var hoofdstuk = '<?php echo $_GET["hoofdstuk"]; ?>';
     // todo: add more;
     </script>
-    <script src="http://localhost/samenvattingen/js/script.js" type="text/javascript"></script>
+    <script src="http://localhost/samenvattingen/js/script.js" type="text/javascript"></script> <!-- CHANGE TO NON-LOCAL URL -->
   </body>
 </html>

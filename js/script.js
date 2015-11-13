@@ -6,20 +6,26 @@ function doesExists(tofind, string){
   }
 }
 
+var baseURL = "http://localhost/samenvattingen/";
+
 // Main pogramm loop
 $(document).ready(function(){
   // Builds request url
-  var url = "http://localhost/samenvattingen/get.php?";
+  var url = baseURL + "get.php?"; // CHANGE TO NON-LOCAL URL
+  var breadcrumbs = "<li><a href=" + baseURL + "index.php" + ">Home</a></li>";
   if(leerjaar){
     url += 'leerjaar' + "=" + leerjaar + "&";
+    breadcrumbs += "<li><a href=" + baseURL + leerjaar + ">" + leerjaar + "</a></li>";
   }
-  if(vak){
+  if(leerjaar && vak){
     url += 'vak' + "=" + vak + "&";
+    breadcrumbs += "<li><a href=" + baseURL + leerjaar + "/" + vak + ">" + vak + "</a></li>";
   }
-  if(hoofdstuk){
+  if(leerjaar && vak && hoofdstuk){
     url += 'hoofdstuk' + "=" + hoofdstuk + "&";
+    breadcrumbs += "<li><a href=" + baseURL + leerjaar + "/" + vak + "/H" + hoofdstuk + ">H" + hoofdstuk + "</a></li>";
   }
-  console.log(url);
+  $('.breadcrumb').html(breadcrumbs);
 
   // Gets data from get.php?SUPPLIEDPARAMS
   $.get(url, function( data ) {
@@ -64,7 +70,7 @@ $(document).ready(function(){
         $('#title').html('Kies een samenvatting');
         for(item in parsedData){
           if(!doesExists(parsedData[item].titel, listData)){
-            var hrefurl = "http://localhost/samenvattingen/summary/"+ parsedData[item].id +"/view";
+            var hrefurl = "http://localhost/samenvattingen/summary/"+ parsedData[item].id +"/view"; // CHANGE TO NON-LOCAL URL
             listData += "<li><a href="+ hrefurl +">" + parsedData[item].titel + "</a> door " + parsedData[item].auteur + "</li>";
           }
         }
