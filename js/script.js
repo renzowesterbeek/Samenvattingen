@@ -6,7 +6,7 @@ function doesExists(tofind, string){
   }
 }
 
-var baseURL = "http://localhost/samenvattingen/";
+var baseURL = "http://localhost/samenvattingen/"; // CHANGE TO NON-LOCAL URL
 
 // Main pogramm loop
 $(document).ready(function(){
@@ -60,7 +60,7 @@ $(document).ready(function(){
         for(item in parsedData){
           if(!doesExists(parsedData[item].hoofdstuk, listData)){
             var hrefurl = parsedData[item].vak + "/H" + parsedData[item].hoofdstuk;
-            listData += "<li><a href="+ hrefurl +">" + parsedData[item].hoofdstuk + "</a></li>";
+            listData += "<li><a href="+ hrefurl +">Hoofdstuk " + parsedData[item].hoofdstuk + "</a></li>";
           }
         }
       }

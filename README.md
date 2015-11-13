@@ -53,17 +53,18 @@ Download: VakTitelAuteur.docx
 | Type | Samenvatting |
 
 ## Bestandsstructuur
-- index.php (homepage)
-- upload.php (uploadplek)
+- index.php (homepage, viewer voor lijsten met categorieën)
 - view.php (viewer voor 1 bestand)
-- list.php (lists alle samenvattingen gevonden met keywords (auteur, vak, jaarlaag, etc))
+- get.php (returned alle samenvattingen gevonden met keywords in JSON format (auteur, vak, jaarlaag, etc))
 - 📁 css/
 - 📁 js/
-- 📁 files/ (geuploade samenvattingen)
+- 📁 backend/   _PHP functies_
+  - connect.php _Connect-script_
+  - system.php  _General system-wide functies_
+- 📁 includes/  _Pagina-onderdelen voor hergebruik_
+- 📁 files/     _Geuploade samenvattingen_
 
 ## Databases
-
 - Bestanden + info
-- Beoordelingen
-- Commentaar
+- Commentaar / beoordelingen
 - Users (incl voorkeuren)
