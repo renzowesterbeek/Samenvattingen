@@ -17,7 +17,7 @@ $auth = new GoogleAuth($db, $googleClient);
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">Samenvattingen</a>
+      <a class="navbar-brand" id="brand" href="index.php">Samenvattingen</a>
     </div>
 
     <!-- Collection of all navbar elements to collapse on mobile -->
@@ -37,7 +37,7 @@ $auth = new GoogleAuth($db, $googleClient);
        <!-- User panel -->
       <ul class="nav navbar-nav navbar-right">
         <?php if($auth->isLoggedIn()){ ?>
-        <li><p class="navbar-text">Je bent ingelogd als <?php echo "naam" . $auth->getName(); ?></p></li>
+        <li><p class="navbar-text">Je bent ingelogd als <?php $auth->getUserFromToken(); ?></p></li>
         <li><button type="button" class="btn btn-default navbar-btn" id="logout" value="logout.php">Log uit</button></li>
         <?php } else {?>
         <li><button type="button" class="btn btn-default navbar-btn" id="login" value="login.php">Log in</button></li>

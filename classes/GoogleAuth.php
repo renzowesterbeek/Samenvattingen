@@ -48,10 +48,6 @@ class GoogleAuth {
     unset($_SESSION['access_token']);
   }
 
-  public function getName(){
-    $sql = "SELECT email FROM users";
-  }
-
   protected function getPayload(){
     $payload = $this->client->verifyIdToken()->getAttributes()['payload'];
 

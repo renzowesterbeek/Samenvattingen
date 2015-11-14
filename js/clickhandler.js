@@ -11,4 +11,7 @@ $(document).ready(function(){
   $('button').click(function(){
     document.location.href = getNonrelativeUrl($(this).val());
   });
+
+  // Corrects brand link to non-relative page
+  $('#brand').attr('href', getNonrelativeUrl($('#brand').attr('href')));
 });
