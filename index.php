@@ -13,6 +13,14 @@
 
     <link rel="stylesheet" href="http://localhost/samenvattingen/css/base.css"> <!-- CHANGE TO NON-LOCAL URL -->
 
+    <script>
+    // Loading $_GET vars for JS
+    var leerjaar = '<?php echo $_GET["leerjaar"]; ?>';
+    var vak = '<?php echo $_GET["vak"]; ?>';
+    var hoofdstuk = '<?php echo $_GET["hoofdstuk"]; ?>';
+    // todo: add more;
+    </script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,13 +45,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <script>
-    // Loading $_GET vars
-    var leerjaar = '<?php echo $_GET["leerjaar"]; ?>';
-    var vak = '<?php echo $_GET["vak"]; ?>';
-    var hoofdstuk = '<?php echo $_GET["hoofdstuk"]; ?>';
-    // todo: add more;
-    </script>
     <script src="http://localhost/samenvattingen/js/script.js" type="text/javascript"></script> <!-- CHANGE TO NON-LOCAL URL -->
+    <script src="http://localhost/samenvattingen/js/clickhandler.js" type="text/javascript"></script> <!-- CHANGE TO NON-LOCAL URL -->
   </body>
 </html>

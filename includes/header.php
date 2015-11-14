@@ -38,9 +38,9 @@ $auth = new GoogleAuth($db, $googleClient);
       <ul class="nav navbar-nav navbar-right">
         <?php if($auth->isLoggedIn()){ ?>
         <li><p class="navbar-text">Je bent ingelogd als <?php echo "naam" . $auth->getName(); ?></p></li>
-        <li><button type="button" class="btn btn-default navbar-btn">Log uit</button></li>
+        <li><button type="button" class="btn btn-default navbar-btn" id="logout" value="logout.php">Log uit</button></li>
         <?php } else {?>
-        <li><button type="button" class="btn btn-default navbar-btn">Log in</button></li>
+        <li><button type="button" class="btn btn-default navbar-btn" id="login" value="login.php">Log in</button></li>
         <?php } ?>
       </ul>
     </div><!-- /.navbar-collapse -->
